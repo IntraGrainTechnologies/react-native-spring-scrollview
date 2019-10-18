@@ -120,5 +120,6 @@ declare module "react-native-spring-scrollview" {
     scrollToEnd(animated?: boolean): Promise<void>;
     endRefresh(): void;
     endLoading(): void;
+    alterScrollability(canScroll : boolean): void;
   }
 }
