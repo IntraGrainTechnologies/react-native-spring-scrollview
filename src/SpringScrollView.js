@@ -509,6 +509,10 @@ export class SpringScrollView extends React.PureComponent<SpringScrollViewPropTy
     this.props.onMomentumScrollEnd && this.props.onMomentumScrollEnd();
   };
 
+  alterScrollability(canScroll : boolean): void {
+    this._scrollView.setNativeProps({scrollEnabled : canScroll})
+  }
+
   static defaultProps = {
     bounces: true,
     scrollEnabled: true,
