@@ -4,7 +4,8 @@
   "description": "An cross-platform (iOS & Android) spring ScrollView",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build"
   },
   "keywords": [
     "react-native",
