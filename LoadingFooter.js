@@ -22,7 +22,7 @@ export class LoadingFooter extends React.Component<
     this.state = { status: props.allLoaded ? "allLoaded" : "waiting" };
   }
 
-  componentWillReceiveProps(nextProps: FooterPropType) {
+  UNSAFE_componentWillReceiveProps(nextProps: FooterPropType) {
     if (nextProps.allLoaded) this.setState({ status: "allLoaded" });
   }
 
